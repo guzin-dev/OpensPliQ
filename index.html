@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Opens - PliQ</title>
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <h1>Insira suas informações para realizar seu cadastro:</h1>
+  <input type="text" placeholder="Nome" id="name" />
+  <input type="email" placeholder="Email" id="email" />
+  <button onclick="createAccount()">Confirmar</button>
+</body>
+
+<script>
+  (function (p, l, i, q, j, s) {
+    p._pliqStt = {
+      token: 'ab571367-d8b2-4521-b85b-ab1a30b29890',
+      log: true,
+      blockBackground: false,
+      timerButtonClose: 0,
+      position: 'full-screen'
+    };
+    j = l.getElementsByTagName('head')[0]; s = l.createElement('script');
+    s.async = 1; s.src = i + q.split(';')[0]; j.appendChild(s);
+    s = l.createElement('link'); s.rel = 'stylesheet';
+    s.href = i + q.split(';')[1]; j.appendChild(s);
+  })(window, document, 'https://pliqdrive.blob.core.windows.net/sandbox/App/Plugin/v4/pliq', '.js;.css');
+</script>
+
+</html>
