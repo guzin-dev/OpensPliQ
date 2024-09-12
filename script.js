@@ -11,32 +11,15 @@ function createAccount() {
     body: JSON.stringify({
       nameImport: 'Teste',
       update_import: 2,
-      scheduling: false,
-      date_scheduling: '',
       customers: [
         {
           name: document.getElementById('name').value,
           email: document.getElementById('email').value,
-          phone: '',
-          identification: document.getElementById('email').value,
-          tags: '{"Tags":""}',
-          fk_type_sexo: null,
-          number: null,
-          properties: [
-            {
-              id_property: 353,
-            },
-          ],
-          properties_contacts: null,
         },
       ],
-      baseLegal: '2',
-      flg_email: false,
+      baseLegal: 6,
       flg_popup: true,
-      flg_whatsapp: false,
-      flg_sms: false,
       flg_manual: true,
-      fk_journey: null,
       abstract_validators: false,
       url_survey: 'f499d34bd87b42948b3960b8f6b82e74',
     }),
