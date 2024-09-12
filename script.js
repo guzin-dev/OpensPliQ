@@ -1,5 +1,5 @@
 // Executando a requisição
-function createAccount() {
+async function createAccount() {
   if (!document.getElementById('name').value) return alert('Insira um nome');
   if (!document.getElementById('email').value) return alert('Insira um email');
   const requestOptions = {
@@ -27,7 +27,7 @@ function createAccount() {
 
   // URL da requisição
   const url = 'https://sandbox-api.pliq.io/v2/api/import';
-  fetch(url, requestOptions)
+  await fetch(url, requestOptions)
     .then((response) => {
       console.log(response);
       if (!response.ok) {
@@ -44,4 +44,9 @@ function createAccount() {
       }
     })
     .catch((error) => console.error('Error:', error));
+
+  console.log('Enviando a pesquisa pra você em 5 segundos');
+  setTimeout(() => {
+    PliQ.initialize({ name: document.getElementById('name').value, email: document.getElementById('email').value });
+  }, 1000 * 5);
 }
