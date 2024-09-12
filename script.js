@@ -10,7 +10,7 @@ function createAccount() {
     },
     body: JSON.stringify({
       nameImport: 'Teste',
-      update_import: '1',
+      update_import: '2',
       scheduling: false,
       date_scheduling: '',
       customers: [
