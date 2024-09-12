@@ -18,6 +18,7 @@ function createAccount() {
           name: document.getElementById('name').value,
           email: document.getElementById('email').value,
           phone: '',
+          identification: document.getElementById('email').value,
           tags: '{"Tags":""}',
           fk_type_sexo: null,
           number: null,
