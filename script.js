@@ -42,8 +42,8 @@ const url = 'https://sandbox-api.pliq.io/v2/api/import';
 
 // Executando a requisição
 function createAccount() {
-  if (document.getElementById('name').value) return alert('Insira um nome');
-  if (document.getElementById('email').value) return alert('Insira um email');
+  if (!document.getElementById('name').value) return alert('Insira um nome');
+  if (!document.getElementById('email').value) return alert('Insira um email');
   fetch(url, requestOptions)
     .then((response) => {
       console.log(response);
